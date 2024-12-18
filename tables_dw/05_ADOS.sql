@@ -1,10 +1,10 @@
 DROP TABLE IF EXISTS ADOS CASCADE;
 
 CREATE TABLE ADOS (
-    slot_id VARCHAR(80),
+    time_id VARCHAR(50),
     aircraft_id VARCHAR(50),
-    number_days INT,
-    PRIMARY KEY (slot_id, aircraft_id),
-    FOREIGN KEY (slot_id) REFERENCES Slot_time(slot_id),
+    number_days INT NOT NULL,
+    PRIMARY KEY (time_id, aircraft_id),
+    FOREIGN KEY (time_id) REFERENCES Time(time_id),
     FOREIGN KEY (aircraft_id) REFERENCES Aircraft(registration_number)
 );
