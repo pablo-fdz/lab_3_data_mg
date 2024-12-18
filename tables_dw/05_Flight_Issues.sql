@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS Flight_Issues CASCADE;
 
 CREATE TABLE Flight_Issues (
-    slot_id INT,
+    slot_id VARCHAR(80),
     aircraft_id VARCHAR(50),
     delay_rate FLOAT,
     cancellation_rate FLOAT,

@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS Flights CASCADE;
 
 CREATE TABLE Flights (
-    route_id INT,
+    route_id VARCHAR(80),
     aircraft_id VARCHAR(50),
     total_flight_hours INT,
     total_flight_cycles INT,
