@@ -6,6 +6,6 @@ CREATE TABLE Flight_Issues (
     delay_rate FLOAT,
     cancellation_rate FLOAT,
     PRIMARY KEY (slot_id, aircraft_id),
-    FOREIGN KEY (slot_id) REFERENCES Scheduled_route(slot_id),
+    FOREIGN KEY (slot_id) REFERENCES Slot_time(slot_id),
     FOREIGN KEY (aircraft_id) REFERENCES Aircraft(registration_number)
 );
