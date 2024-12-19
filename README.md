@@ -1,14 +1,7 @@
 # lab_3_data_mg
 
-## TODO
-
-1. Ver cómo exportar los datos y pasarlos a una database local
-2. Comprobar delayCode y ver si nos puede servir para ver si un flight está delayed (parece que los que no están null no tuvieron delay) - el código es el IATA code.
-3. Comprobar que no coincidan horarios de flights con maintenance events + que no haya execution date que coincida con un flight.
-4. Parece que las tablas de WorkOrders y las asociadas las podemos ignorar.
-5. Assumption: han hecho bien los create table statements.
-6. ETL process must extract data from the available data sources (básicamente extraer de las tablas que nos interesan + csv.).
-7. Perform some data cleaning (for example, but not limited to pre-select data, remove duplicates, remove nulls, etc.). Comprobar todo esto (flights duplicados o nulls, por ejemplo) y más cosas.
-8. Integrate data coming from different data sources (importar csv y relacionar aircraft ids con modelos y manufacturers).
-9. Calculate necessary measures to answer user requirements (facts que hemos contemplado).
-10. And finally loads the data into a previously implemented DW schema. Esta es probablemente la parte más complicada.
+Indication of where to locate the tasks:
+- The main document of the folder is the Jupyter Notebook `lab_3.ipynb`, where we 1) show the UML of the data warehouse; 2) create the database (the data warehouse) through the SQL scripts saved in the folder `tables_dw` and connect to it; 3) implement the ETL process, where we use as data sources the databases `AIMS`, `AMOS` and the lookup table `aircraft-manufaturerinfo-lookup.csv`; 4) implement the SQL queries (ROLAP) on the data warehouse through the SQL scripts saved in the folder `rolap_queries`.
+- The folder `tables_dw` contains 5 SQL scripts of `CREATE TABLE` statements, where each scripts creates one relation.
+- The folder `rolap_queries` contains 2 SQL scripts - the queries that implement the user requirements R1 and R2.
+- The image `Lab_3_UML.png` is the UML of our data warehouse, where we have denoted with "F" the fact tables and "D" the dimension tables.
