@@ -1,4 +1,4 @@
-# 🛫 Lab 3: Data Warehousing Project – 23D021: Data Management
+# Data Warehousing Project:
 
 ## 📌 Overview
 
