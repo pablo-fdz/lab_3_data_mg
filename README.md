@@ -12,8 +12,16 @@
  
  ## 📁 Repository Structure
  
-``` ├── rolap_queries/ # OLAP queries and notebook for analysis ├── tables_dw/ # SQL files for DW schema (ROLAP model) ├── Lab_3_UML.png # UML diagram(s) of the star schema(s) ├── lab_3.ipynb # Main Jupyter Notebook for ETL and queries ├── aircraft-manufaturerinfo-lookup.csv # External CSV with aircraft manufacturer data ├── README.md # Project documentation ├── LICENSE # License information └── .gitignore # Git ignored files ``` 
- 
+```bash
+├── rolap_queries/ # OLAP queries and notebook for analysis
+├── tables_dw/ # SQL files for DW schema (ROLAP model)
+├── Lab_3_UML.png # UML diagram(s) of the star schema(s)
+├── lab_3.ipynb # Main Jupyter Notebook for ETL and queries
+├── aircraft-manufaturerinfo-lookup.csv # External CSV with aircraft manufacturer data
+├── README.md # Project documentation
+├── LICENSE # License information
+└── .gitignore # Git ignored files ``` 
+ ```
  ## 🧩 Input Data Sources
  
  - **AIMS (Air Information Management System)** – PostgreSQL
