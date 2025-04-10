@@ -12,10 +12,10 @@
  
  ## 📁 Repository Structure
  
- ├── rolap_queries/ # OLAP queries and notebook for analysis 
+ .├── rolap_queries/ # OLAP queries
  ├── tables_dw/ # SQL files for DW schema (ROLAP model) 
  ├── Lab_3_UML.png # UML diagram(s) of the star schema(s) 
- ├── lab_3.ipynb # Main Jupyter Notebook for ETL and queries 
+ ├── lab_3.ipynb # Main Jupyter Notebook for ETL 
  ├── aircraft-manufaturerinfo-lookup.csv # External CSV with aircraft manufacturer data 
  ├── README.md # Project documentation 
  ├── LICENSE # License information 
